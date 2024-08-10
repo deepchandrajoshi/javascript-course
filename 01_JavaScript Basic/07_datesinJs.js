@@ -1,30 +1,36 @@
-// Dates
+// Types of Dates
 
+// Initialization
 let myDate = new Date();
-console.log(myDate); // Sat Jul 06 2024 07:44:10 GMT+0530 (India Standard Time) in chrome but js => 2024-07-06T02:15:08.032Z
-console.log(myDate.toString()); // Sat Jul 06 2024 07:45:08 GMT+0530 (India Standard Time)
-console.log(myDate.toDateString()); // Sat Jul 06 2024
-console.log(myDate.toLocaleString()); // 6/7/2024, 7:46:29 am
-console.log(typeof myDate); // object
+console.log(myDate); // 2024-07-15T23:22:03.737Z
 
-// let myCreatedDate = new Date(2023, 0, 23); // 23/1/2023, 12:00:00 am
-// let myCreatedDate = new Date(2023, 0, 23, 5, 3); // 23/1/2023, 5:03:00 am
-// let myCreatedDate = new Date("2023-01-14"); // 14/1/2023, 5:30:00 am
-let myCreatedDate = new Date("01-14-2023"); // 14/1/2023, 12:00:00 am
-console.log(myCreatedDate.toLocaleString()); //
-// let myTimeStamp = Date.now();
+// get Methods
+myDate.getFullYear(); // 2024
+myDate.getMonth(); // 6
+myDate.getDate(); // 16
+myDate.getDay(); // 2
+myDate.getHours(); // 4
+myDate.getMinutes(); // 57
+myDate.getSeconds(); // 21
+myDate.getMilliseconds(); // 764
+myDate.getTime(); // 1721086041764
+myDate.getTimezoneOffset(); // -330
 
-// console.log(myTimeStamp);
-// console.log(myCreatedDate.getTime());
-// console.log(Math.floor(Date.now() / 1000));
+// Conversions
+myDate.toString; // Tue Jul 16 2024 05:01:30 GMT+0530 (India Standard Time)
+myDate.toTimeString; // 05:01:30 GMT+0530
+myDate.toDateString; // Tue Jul 16 2024
+myDate.toISOString; // 2024-07-15T23:43:04.838Z
+myDate.toLocaleString; // 16/7/2024, 5:12:39 am
+myDate.toLocaleTimeString; // 5:13:27 am
+myDate.toLocaleDateString; // 16/7/2024
 
-// let newDate = new Date();
-// console.log(newDate);
-// console.log(newDate.getMonth() + 1);
-// console.log(newDate.getDay());
-
-// // `${newDate.getDay()} and the time `
-
-// newDate.toLocaleString("default", {
-//   weekday: "long",
-// });
+// set Methods
+myDate.setFullYear(2024);
+myDate.setMonth(6);
+myDate.setDate(16);
+myDate.setHours(5);
+myDate.setMinutes(18);
+myDate.setSeconds(21);
+myDate.setMilliseconds(764);
+myDate.setTime(1721086041764);

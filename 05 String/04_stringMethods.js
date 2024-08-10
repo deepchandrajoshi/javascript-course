@@ -10,7 +10,6 @@ let letter2 = text[2]; // C
 
 //   ====================================================================================================  //
 
-let Fruits = "Apple, banana, Kiwi";
 let part1 = text.slice(7, 13); // HIJKLM
 let part2 = text.slice(7); // HIJKLMNOPQRSTUVWXYZ
 let part3 = text.slice(-12); // OPQRSTUVWXYZ

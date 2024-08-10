@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Manipulation Example</title>
+</head>
+
+<body>
+    <div id="example" class="old-class">Original content</div>
+    <div id="parent">
+        <div id="child">Child element</div>
+        <div id="reference">Reference element</div>
+    </div>
+
+    <script>
+        // Changing content
+        const example = document.getElementById('example');
+        example.innerHTML = '<p>New content</p>';
+
+        // Changing attributes
+        example.setAttribute('class', 'new-class');
+        console.log(example.getAttribute('class'));
+        example.removeAttribute('class');
+
+        // Changing style
+        example.style.color = 'blue';
+        example.style.backgroundColor = 'yellow';
+
+        // Adding and removing classes
+        example.classList.add('new-class');
+        example.classList.remove('old-class');
+        example.classList.toggle('active');
+
+        // Creating and inserting elements
+        const newElement = document.createElement('div');
+        newElement.textContent = 'I am a new div!';
+        const parent = document.getElementById('parent');
+        parent.appendChild(newElement);
+
+        const anotherNewElement = document.createElement('div');
+        anotherNewElement.textContent = 'I am another new div!';
+        const referenceElement = document.getElementById('reference');
+        parent.insertBefore(anotherNewElement, referenceElement);
+
+        // Removing elements
+        const child = document.getElementById('child');
+        parent.removeChild(child);
+
+        example.remove();
+    </script>
+</body>
+
+</html>

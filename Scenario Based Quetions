@@ -1,0 +1,241 @@
+=> SyntaxError vs TypeError vs ReferenceError
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=>
+function outer() {
+let userName = "Deep";
+}
+console.log(userName) // ReferenceError: userName is not defined
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> not define VS undefine?
+~ if we store `a` then they give us to "a is not define", but if we store `let a` they give "undefine"
+TRY-- enter in console
+a;
+// a is not define
+let a;
+// undefine
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> Hoisting in JS
+~
+let x = 7;
+function getName(){
+console.log("Namste JS");
+}
+getName(); // Namste JS
+console.log(x); // 7
+
+## but if i do this
+
+getName(); // Namste JS
+console.log(x); // ReferenceError: Cannot access 'x' before initialization // like undefine
+let x = 7;
+function getName() {
+console.log("Namste JS");
+}
+
+## but if i do this
+
+getName(); // Namste JS
+console.log(x); // ReferenceError: x is not defined
+function getName() {
+console.log("Namste JS");
+}
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> Scenario 1 (function in variable environment) || Very important for understanding JS Hoisting
+CODE -
+var x = 1;
+a();
+b();
+console.log(x);
+
+function a(){
+var x = 10;
+console.log(x);
+}
+
+function b(){
+var x = 100;
+console.log(x);
+}
+WHAT IS THE OUTPUT?
+~ 10
+100
+1
+
+## TIPS - Watch to understand this scenario again - how functions work in js?(Akshay Saini)
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> Scenario 2 (Scope and Lexical Environment) ||
+CODE -
+function a() {
+console.log(b);
+}
+let b = 10;
+a(); // it print 10
+
+## but if i do this
+
+function a() {
+let b = 10;
+}
+console.log(b);
+a(); // ReferenceError: b is not defined
+
+## TIPS - Scope mean where you can access your veriable and function is scope
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> let and const vs var
+console.log(a) // Cannot access 'a' before initialization
+console.log(b) // Cannot access 'b' before initialization
+console.log(c) // undefined
+let a = 12;
+const b = 23;
+var c = 54;
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> block hoisting
+{
+var a = 10;
+let b = 20;
+const c = 30;
+console.log(a); // 10
+console.log(b); // 20
+console.log(c); // 30
+}
+console.log(a); // 10
+console.log(b); // ReferenceError: b is not defined
+console.log(c); // ReferenceError: c is not defined
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> What is Closures?
+~ A closure is an inner function that has access to the outer (enclosing) function’s variables
+function x() {
+var a = 7; // name is a local variable created by x
+function y() {
+// y() is the inner function, that forms the closure
+console.log(a); // use variable declared in the parent function
+}
+y();
+}
+x();
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+=> What is the difference between a promise and an async/await?
+~ Promises are objects that represent the eventual completion or failure of an asynchronous operation, while async/await is a syntax built on top of promises that allows for more concise and sequential asynchronous code, making it easier to work with promises.
+==>> Example of async/await:
+async function myAsyncFunction() {
+let promise = new Promise((resolve, reject) => {
+setTimeout(() => resolve("Async/Await resolved!"), 2000);
+});
+let result = await promise;
+console.log(result);
+}
+myAsyncFunction();
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---

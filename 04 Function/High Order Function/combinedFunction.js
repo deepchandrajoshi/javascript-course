@@ -25,6 +25,6 @@ const totalAgeOfCoffeeLoversAbove18 = coffeeLoversAbove18.reduce(ageReducer, 0);
 
 const totalAge = people.reduce(ageReducer, 0);
 
-console.log(coffeeLoversAbove18); //
+console.log(coffeeLoversAbove18); // return Array of coffeeLoversAbove18
 console.log(totalAgeOfCoffeeLoversAbove18); // 57
 console.log(totalAge); // 73

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching The DOM</title>
+</head>
+
+<body>
+    <div id="main">
+        <ul class="menu">
+            <li class="menu-item">Home</li>
+            <li class="menu-item">About</li>
+            <li class="menu-item">Contact</li>
+        </ul>
+    </div>
+
+    <script>
+        // Retrieve the element with the ID 'main'
+        const mainDiv = document.getElementById('main');
+
+        // Retrieve all elements with the class 'menu-item'
+        const menuItems = document.getElementsByClassName('menu-item');
+
+        // Retrieve the 'div' Tag Name
+        const tag = document.getElementsByTagName('div')
+
+        // Retrieve the first 'li' element inside the 'menu' class
+        const firstMenuItem = document.querySelector('.menu li');
+
+        // Retrieve all 'li' elements inside the 'menu' class
+        const allMenuItems = document.querySelectorAll('.menu li');
+
+        // Retrieve the closest 'div' ancestor of the first menu item
+        const closestDiv = document.querySelector('.menu li').closest('div');
+        console.log(closestDiv);
+
+        // Example manipulation: Change the text of the first menu item
+        firstMenuItem.textContent = 'Welcome';
+    </script>
+</body>
+
+</html>
+
+
+<!-- document.getElementById(id): Selects an element by its ID.
+document.getElementsByClassName(className): Selects elements by their class name.
+document.getElementsByTagName(tagName): Selects elements by their tag name.
+document.querySelector(selector): Selects the first element that matches a CSS selector.
+document.querySelectorAll(selector): Selects all elements that match a CSS selector. -->
