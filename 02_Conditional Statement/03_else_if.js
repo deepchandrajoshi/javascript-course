@@ -12,3 +12,5 @@ if (mode === "dark") {
 }
 
 console.log(color);
+
+// Output: black

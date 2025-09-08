@@ -4,3 +4,5 @@ if (age >= 18) {
 } else {
   console.log("You can't vote before 18.");
 }
+
+// Output: You Can Vote

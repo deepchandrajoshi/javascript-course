@@ -14,7 +14,7 @@ arr.forEach(function printVal(val) {
 
 // arrow function
 arr.forEach((val) => {
-  console.log(val * 2); // 1 2 3 4 5
+  console.log(val * 2); // 2 4 6 8 10
 });
 
 let cities = ["almora", "delhi", "mumbai"];

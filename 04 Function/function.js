@@ -27,5 +27,6 @@ function loginUserMessage(userName) {
   return `${userName} Just Logged in`;
 }
 loginUserMessage("Deep Chandra Joshi");
+console.log(loginUserMessage("Deep Chandra Joshi")); // Deep Chandra Joshi Just Logged in
 
 //   ====================================================================================================  //

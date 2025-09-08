@@ -21,27 +21,27 @@ for (city of cities) {
 let myArray = ["deep", 12, "chandra", 34];
 let arraySize = 0;
 for (const iterator of myArray) {
-  console.log(iterator);
+  console.log(iterator); // deep 12 chandra 34
   arraySize++;
 }
-console.log(`The arraySize is = ${arraySize}`);
+console.log(`The arraySize is = ${arraySize}`); // The arraySize is = 4
 
 // Iterating over a string
 const iterable = "boo";
 
 for (const value of iterable) {
-  console.log(value);
+  console.log(value); // b o o
 }
 // "b"
 // "o"
 // "o"
 
 // Calculate string length with for..of
-let str = "Deep Chandra Joshi";
+let str = "DEEP CHANDRA JOSHI";
 let size = 0;
 for (let i of str) {
   // iteretor -> characters
-  console.log(i); // characters of name
+  console.log(i); // D E E P  C H A N D R A  J O S H I
   size++;
 }
 console.log("string size is = ", size); // string size is =  18
@@ -67,7 +67,7 @@ for (const property in object) {
   // console.log(property); // a, b, c
   // console.log(object[property]); // 1, 2, 3
   // property is a,b,c and object[property] is 1, 2, 3
-  console.log(`${property}: ${object[property]}`);
+  console.log(`${property}: ${object[property]}`); // a: 1 b: 2 c: 3
 }
 
 let student = {
