@@ -1,0 +1,86 @@
+D:\WEB DEVELOPMENTS\04 JAVASCRIPT\Topics
+│
+├── 01 JavaScript Basics
+│   ├── 01_Variables.js
+│   ├── 02_Operators.js
+│   ├── 03_TypeConversion.js
+│   ├── 04_Strings.js
+│   ├── 05_NumbersMath.js
+│   ├── 06_Dates.js
+│   ├── 07_Equality.js
+│   ├── 08_Scope.js
+│
+├── 02 JavaScript Conditionals
+│   ├── 01_IfElse.js
+│   ├── 02_Switch.js
+│   ├── 03_Ternary.js
+│   ├── 04_LogicalOperators.js
+│
+├── 03 JavaScript Functions
+│   ├── 01_FunctionDeclaration.js
+│   ├── 02_FunctionExpression.js
+│   ├── 03_ArrowFunctions.js
+│   ├── 04_Parameters.js
+│   ├── 05_ReturnValues.js
+│   ├── 06_Callbacks.js
+│   ├── 07_Closures.js
+│
+├── 04 JavaScript Arrays
+│   ├── 01_ArrayCreation.js
+│   ├── 02_ArrayMethods.js
+│   ├── 03_ArrayIteration.js
+│   ├── 04_Multidimensional.js
+│
+├── 05 JavaScript Loops
+│   ├── 01_ForLoop.js
+│   ├── 02_WhileLoop.js
+│   ├── 03_DoWhile.js
+│   ├── 04_ForOfForIn.js
+│
+├── 06 JavaScript Iterators
+│   ├── 01_ForEach.js
+│   ├── 02_Map.js
+│   ├── 03_Filter.js
+│   ├── 04_Reduce.js
+│   ├── 05_FindSomeEvery.js
+│
+├── 07 JavaScript Objects
+│   ├── 01_ObjectCreation.js
+│   ├── 02_ObjectAccess.js
+│   ├── 03_ObjectMethods.js
+│   ├── 04_Destructuring.js
+│   ├── 05_NestedObjects.js
+│   ├── 06_ObjectKeysValues.js
+│
+├── 08 JavaScript Classes
+│   ├── 01_ClassDeclaration.js
+│   ├── 02_Constructor.js
+│   ├── 03_ClassMethods.js
+│   ├── 04_Inheritance.js
+│   ├── 05_GetSet.js
+│   ├── 06_Static.js
+│
+├── 09 JavaScript Modules
+│   ├── 01_ExportImport.js
+│   ├── 02_NamedDefault.js
+│   ├── 03_ModulePatterns.js
+│
+├── 10 JavaScript Promises
+│   ├── 01_CreatePromise.js
+│   ├── 02_PromiseStates.js
+│   ├── 03_ThenCatchFinally.js
+│   ├── 04_PromiseChaining.js
+│   ├── 05_PromiseAllRace.js
+│
+├── 11 JavaScript Async-Await
+│   ├── 01_AsyncFunction.js
+│   ├── 02_Await.js
+│   ├── 03_TryCatch.js
+│   ├── 04_AsyncVsPromises.js
+│
+└── 12 JavaScript Requests
+    ├── 01_XHR.js
+    ├── 02_Fetch.js
+    ├── 03_FetchAsyncAwait.js
+    ├── 04_JSON.js
+    ├── 05_ErrorHandling.js
