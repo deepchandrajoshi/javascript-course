@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Nodes</title>
+</head>
+
+<body>
+    <div id="container">
+        <p>First Child Element</p>
+        <span>Second Child Element</span>
+        This is Text Node
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+
+        // How to get ParentNode and ParentElement
+        const parentNode = container.parentNode;
+        console.log(parentNode); // < body >...</ body >
+        const parentElement = container.parentElement;
+        console.log(parentElement); // < body >...</ body >
+
+        // How to get Child
+        // Accessing childNodes and childElements
+        const allChildNodes = container.childNodes;
+        console.log(allChildNodes); // NodeList(5) [p, text, span, text, #text]
+        const childElements = container.children;
+        console.log(childElements); // HTMLCollection(2) [p, span]
+
+        // Accessing the firstChild and lastChild nodes
+        const firstChild = container.firstChild;
+        const lastChild = container.lastChild;
+        console.log(firstChild); // <p>First Child Element</p>
+        console.log(lastChild); // #text " Text Node"
+
+        // Accessing the firstElementChild and lastElementChild
+        const firstElementChild = container.firstElementChild;
+        const lastElementChild = container.lastElementChild;
+        console.log(firstElementChild); // <p>First Child Element</p>
+        console.log(lastElementChild); // <span>Second Child Element</span>
+
+
+
+        // How to get Sibling
+        const second = document.getElementById('second');
+
+        // Accessing the previous and next sibling nodes
+        const previousSibling = second.previousSibling;
+        const nextSibling = second.nextSibling;
+        console.log(previousSibling); // #text (newline)
+        console.log(nextSibling); // #text (newline)
+
+        // Accessing the previous and next sibling elements
+        const previousElementSibling = second.previousElementSibling;
+        const nextElementSibling = second.nextElementSibling;
+        console.log(previousElementSibling); // <p id="first">First Element</p>
+        console.log(nextElementSibling); // <p id="third">Third Element</p>
+    </script>
+</body>
+
+</html>

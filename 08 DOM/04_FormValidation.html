@@ -1,0 +1,16 @@
+<form id="myForm">
+    <input type="text" id="username" placeholder="Username" />
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    document.getElementById("myForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+        const username = document.getElementById("username").value;
+        if (username === "") {
+            alert('Username cannot be empty!');
+        } else {
+            alert('Form submitted with username: ' + username);
+        }
+    });
+</script>

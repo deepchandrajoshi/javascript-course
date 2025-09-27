@@ -1,0 +1,10 @@
+{
+  "grammarly.selectors": [
+    {
+      "language": "javascript",
+      "scheme": "file",
+      "pattern": "01_JavaScript Basic/01_variables.js"
+    }
+  ],
+  "liveServer.settings.port": 5501
+}

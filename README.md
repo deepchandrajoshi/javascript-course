@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JAVASCRIPT
 JavaScript concepts, practice exercises, and mini-projects while learning.
 
@@ -27,3 +28,14 @@ I’m building this repo to improve my JavaScript skills and track my progress.
 - `/exercises` → Coding challenges and solutions  
 
 ---
+=======
+# javascript-course
+
+Code Repository for JavaScript Learner
+
+============================================================================================================================
+
+# Most Important JavaScript Basic Questions and Their Answer
+
+Adding Soon...
+>>>>>>> 4cc2c686c4dc85833a0a7e704e2d5356f0bda764

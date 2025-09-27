@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener Example</title>
+</head>
+
+<body>
+    <button id="myButton">Click me</button>
+    <button id="removeHandlerButton">Remove Click Handler</button>
+    <div id="message">Button is not click yet.</div>
+
+    <script>
+        // Function to handle the click event
+        function handleClick(event) {
+            document.getElementById('message').innerHTML = 'Button clicked!';
+        }
+
+        // Function to remove the click event handler
+        function removeClickHandler() {
+            button.removeEventListener('click', handleClick);
+            document.getElementById('message').innerHTML = 'Click handler removed!';
+        }
+
+        // Get the button elements
+        const button = document.getElementById('myButton');
+        const removeButton = document.getElementById('removeHandlerButton');
+
+        // Attach the click event handler to the button
+        button.addEventListener('click', handleClick);
+
+        // Attach the click event handler to the "remove handler" button
+        removeButton.addEventListener('click', removeClickHandler);
+
+    </script>
+</body>
+
+</html>
