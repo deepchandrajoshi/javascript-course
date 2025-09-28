@@ -1,0 +1,91 @@
+📅 Phase 1: JavaScript Mastery (8 Weeks)
+## Week 1: JavaScript Basics Review (Quick Refresh)
+
+Variables (var, let, const), data types, operators
+Conditions (if, else, switch)
+Loops (for, while, for…of, for…in)
+Functions (normal & arrow functions)
+
+✅ Mini-projects:
+1. Simple calculator
+2. Temperature converter
+==============================================================================
+## Week 2: Arrays & Strings (ES6+ methods)
+
+Arrays: push, pop, map, filter, reduce, forEach, find, sort
+Strings: slice, substring, replace, split, template literals
+Destructuring & spread/rest operator
+
+✅ Mini-projects:
+1. Word counter app
+2. Student grade calculator
+3. Grocery list manager (using arrays)
+==============================================================================
+## Week 3: Objects & DOM Basics
+
+Objects, nested objects, this keyword
+JSON basics
+DOM: getElementById, querySelector, innerHTML, style changes, events (click, keyup, mouseover)
+
+✅ Mini-projects:
+1. Digital clock
+2. Background color changer
+3. Image slider
+==============================================================================
+## Week 4: DOM Advanced & Events
+
+Event bubbling & delegation
+Forms & validation
+Creating/removing DOM elements
+LocalStorage & SessionStorage
+
+✅ Mini-projects:
+1. To-do list (save to LocalStorage)
+2. Form validation app (login/signup)
+==============================================================================
+## Week 5: Functions Deep Dive + OOP in JS
+
+Higher-order functions
+Closures & scope
+Constructor functions
+Classes, inheritance, super
+this binding
+
+✅ Mini-projects:
+1. Bank account class (deposit/withdraw)
+2. Library management (add/remove books)
+==============================================================================
+## Week 6: Async JavaScript (Very Important!)
+
+Callbacks & Promises
+async / await
+Fetch API (GET/POST requests)
+Error handling (try…catch)
+
+✅ Mini-projects:
+1. Fetch GitHub users API
+2. Weather app using OpenWeather API
+==============================================================================
+## Week 7: ES6+ & Modules
+
+ES6 features: let/const, template literals, arrow functions, default params
+Import/export modules
+Array/Object destructuring
+Spread/rest operators
+Optional chaining
+
+✅ Mini-projects:
+1. Quiz app with modular code
+2. Expense tracker
+==============================================================================
+## Week 8: Final JS Projects (Capstone)
+
+👉 Build 2–3 bigger projects to solidify skills:
+
+Full-featured To-do app (CRUD + LocalStorage)
+Weather dashboard (API + search functionality)
+Notes app with categories & search
+
+Push all projects to GitHub.
+==============================================================================
+## 
